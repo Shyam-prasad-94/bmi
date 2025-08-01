@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+
+        }
+
+        button {
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            width: 100%;
+            color: white;
+            font-size: 16px;
+            background-color: #00b894;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .home {
+            margin: 50px auto;
+            max-width: 500px;
+            width: 90%;
+            padding: 50px;
+            border-radius: 20px;
+            background-color: lightgray;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        #div {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.5s ease;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: #047c66;">
+    <div class="home">
+
+        <h1>BMI Calculator</h1>
+        <label>Weight:</label>
+        <input type="number" placeholder="Enter Weight In Kg's" id="weight"><br>
+
+        <label>Height:</label>
+        <input type="number" placeholder="Enter Height In Cm's" id="height"><br>
+
+        <button id="calculate"><b>Calculate</b></button>
+
+        <div id="div">
+
+        </div>
+
+        <div id="chart">
+
+        </div>
+    </div>
+    <script src="BMI.js"></script>
+</body>
+
+</html>
